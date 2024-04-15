@@ -4,6 +4,15 @@
              xmlns:local="clr-namespace:PM01_520_Sevastysanov"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!--СТИЛИ ОКОН И ДЛЯ ВСЕГО ПРОЕКТА-->
+                <ResourceDictionary Source="Styles\ModernWindowStyle.xaml"/>
+                
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
+
+
     </Application.Resources>
 </Application>

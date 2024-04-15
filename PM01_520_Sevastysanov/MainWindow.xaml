@@ -5,8 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PM01_520_Sevastysanov"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Главное окно"
+        Style="{StaticResource ModernWindowStyle}">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+
+        <!-- Заголовок -->
+        <TextBlock Text="Мероприятия" Margin="10,3,10,37" FontSize="20" Grid.RowSpan="2"/>
+
+        
+
+
+        <!-- Кнопки перехода -->
+        <StackPanel Orientation="Horizontal" Grid.Row="3" Margin="10">
+            <Button Content="Авторизация" Click="Login_Click"/>
+            <DataGrid x:Name="DataGridOsn" AutoGenerateColumns="False" Width="700">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
+                    <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
+                    <DataGridTextColumn Header="Date" Binding="{Binding Date}"/>
+                    <DataGridTextColumn Header="CityId" Binding="{Binding CityId}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
         
     </Grid>
 </Window>
