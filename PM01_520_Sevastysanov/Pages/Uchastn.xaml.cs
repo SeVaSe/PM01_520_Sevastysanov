@@ -10,21 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PM01_520_Sevastysanov.Windows
+namespace PM01_520_Sevastysanov.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для AuthWin.xaml
+    /// Логика взаимодействия для Uchastn.xaml
     /// </summary>
-    public partial class AuthWin : Window
+    public partial class Uchastn : Page
     {
-        public AuthWin()
+        public Uchastn()
         {
             InitializeComponent();
-            MainFrame.NavigationService.RemoveBackEntry();
         }
-
-
     }
 }

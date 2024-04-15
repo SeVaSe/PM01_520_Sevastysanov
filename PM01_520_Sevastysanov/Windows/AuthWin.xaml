@@ -8,9 +8,7 @@
         Title="AuthWin" 
         Style="{StaticResource ModernWindowStyle}">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="36" Margin="243,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="286"/>
-        <TextBox HorizontalAlignment="Left" Height="36" Margin="243,104,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="286"/>
-        <Button Content="Войти" HorizontalAlignment="Left" Margin="308,145,0,0" VerticalAlignment="Top" Width="142" Height="31"/>
+        <Frame Name="MainFrame" Source="\Pages\AuthPage.xaml" Margin="0,48,0,48" Grid.RowSpan="3"/>
 
     </Grid>
 </Window>
